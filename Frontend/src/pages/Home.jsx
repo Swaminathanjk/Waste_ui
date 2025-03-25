@@ -2,6 +2,14 @@ import { Link } from "react-router-dom";
 import Scan from "./Scan";
 
 export default function Home() {
+  const user = JSON.parse(localStorage.getItem("user")); // Parse stored user object
+  const userId = user?.id; // Extract userId
+  console.log(userId);
+  const token = localStorage.getItem("token");
+  console.log(token);
+  
+
+  
   return (
     <div className="flex flex-col items-center justify-center px-4">
       <section className="text-center my-10">

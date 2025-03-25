@@ -16,7 +16,7 @@ const Profile = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://waste-ui.onrender.com/api/user/profile",
+          "http://localhost:5000/api/user/profile",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

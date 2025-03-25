@@ -3,8 +3,11 @@ import axios from "axios";
 import * as tf from "@tensorflow/tfjs";
 import * as cocoSsd from "@tensorflow-models/coco-ssd";
 import WastePopup from "../components/WastePopup";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Scan = () => {
+  const navigate = useNavigate();
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const [model, setModel] = useState(null);
@@ -43,14 +46,9 @@ const Scan = () => {
   const fetchWasteCategories = async () => {
     try {
       const response = await axios.get(
-        "https://waste-ui.onrender.com/api/waste/waste-items"
+        "http://localhost:5000/api/wasteInfo/waste-items"
       );
-
-      console.log("API Response:", response.data);
-
-      const wasteItems = Array.isArray(response.data)
-        ? response.data
-        : response.data.items;
+      const wasteItems = response.data;
 
       if (!Array.isArray(wasteItems)) {
         throw new Error("Unexpected API response format");
@@ -79,7 +77,6 @@ const Scan = () => {
 
     const predictions = await model.detect(video);
     setDetections(predictions);
-
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     predictions.forEach((prediction) => {
@@ -122,12 +119,11 @@ const Scan = () => {
           const wasteCategory = wasteCategories[detectedWasteName] || "Unknown";
 
           const wasteItem = {
-            name: prediction.class, // Ensure name is passed correctly
+            name: prediction.class,
             category: wasteCategory,
           };
 
-          console.log("Selected Waste Item:", wasteItem); // Debugging
-
+          console.log("Selected Waste Item:", wasteItem);
           setSelectedWasteItem(wasteItem);
           break;
         }
@@ -147,7 +143,12 @@ const Scan = () => {
   };
 
   const handleDispose = (wasteItem) => {
-    console.log(`Disposing of: ${wasteItem.name}`);
+    if (!wasteItem || !wasteItem.name) {
+      console.error("handleDispose: Invalid waste item", wasteItem);
+      return;
+    }
+    console.log("Navigating to waste-details with:", wasteItem.name);
+    navigate(`/waste-details/${wasteItem.name}`);
     closePopup();
   };
 

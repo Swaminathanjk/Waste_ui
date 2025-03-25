@@ -26,8 +26,8 @@ const Auth = () => {
     e.preventDefault();
     try {
       const url = isLogin
-        ? "https://waste-ui.onrender.com/api/auth/login"
-        : "https://waste-ui.onrender.com/api/auth/signup";
+        ? "http://localhost:5000/api/auth/login"
+        : "http://localhost:5000/api/auth/signup";
 
       const { data } = await axios.post(url, formData);
 
