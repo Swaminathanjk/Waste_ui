@@ -42,7 +42,9 @@ const Scan = () => {
 
   const fetchWasteCategories = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/waste/waste-items");
+      const response = await axios.get(
+        "https://waste-ui.onrender.com/api/waste/waste-items"
+      );
 
       console.log("API Response:", response.data); // Debugging line
 

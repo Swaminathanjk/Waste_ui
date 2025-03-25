@@ -15,9 +15,12 @@ const Profile = () => {
 
     const fetchUser = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/user/profile", {
-          headers: { Authorization: `Bearer ${token}` },
-        });
+        const response = await axios.get(
+          "https://waste-ui.onrender.com/api/user/profile",
+          {
+            headers: { Authorization: `Bearer ${token}` },
+          }
+        );
         setUser(response.data);
       } catch (error) {
         console.error("Error fetching user data:", error);
@@ -43,7 +46,10 @@ const Profile = () => {
       ) : (
         <div className="text-center">
           <p className="text-red-500 font-semibold">Not Logged In</p>
-          <Link to="/auth" className="text-blue-600 underline mt-2 inline-block">
+          <Link
+            to="/auth"
+            className="text-blue-600 underline mt-2 inline-block"
+          >
             Go to Login
           </Link>
         </div>

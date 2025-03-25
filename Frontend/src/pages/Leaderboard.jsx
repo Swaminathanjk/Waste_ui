@@ -16,7 +16,7 @@ const Leaderboard = () => {
     const fetchLeaderboard = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/user/alluser",
+          "https://waste-ui.onrender.com/api/user/alluser",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

@@ -11,7 +11,9 @@ const WasteDetection = () => {
   useEffect(() => {
     const fetchWasteData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/waste-items");
+        const response = await axios.get(
+          "https://waste-ui.onrender.com/api/waste-items"
+        );
         setWasteItems(response.data);
       } catch (error) {
         console.error("Error fetching waste data:", error);
@@ -22,12 +24,16 @@ const WasteDetection = () => {
   }, []);
 
   const handleDispose = (wasteItem) => {
-    navigate(`/waste-details/${wasteItem.name.toLowerCase().replace(/\s+/g, "-")}`);
+    navigate(
+      `/waste-details/${wasteItem.name.toLowerCase().replace(/\s+/g, "-")}`
+    );
   };
 
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold text-center mb-4">Detected Waste Items</h1>
+      <h1 className="text-2xl font-bold text-center mb-4">
+        Detected Waste Items
+      </h1>
       <div className="grid grid-cols-2 gap-4">
         {wasteItems.map((waste) => (
           <button
