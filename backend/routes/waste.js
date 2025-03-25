@@ -3,7 +3,7 @@ const WasteInfo = require("../models/WasteInfo"); // Waste data model
 const router = express.Router();
 
 // Get all waste items
-app.get("/api/waste/waste-items", async (req, res) => {
+router.get("/api/waste/waste-items", async (req, res) => {
   try {
     const wasteItems = await WasteItem.find({}).lean(); // Use lean() for faster response
     res.json(wasteItems);
