@@ -12,7 +12,7 @@ const WasteDetails = () => {
     const fetchWasteDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/wasteInfo/waste-items/${wasteName}`
+          `https://waste-ui.onrender.com/api/wasteInfo/waste-items/${wasteName}`
         );
         setWasteDetails(response.data);
       } catch (error) {
@@ -39,7 +39,7 @@ const WasteDetails = () => {
       }
 
       const response = await axios.post(
-        "http://localhost:5000/api/waste/dispose",
+        "https://waste-ui.onrender.com/api/waste/dispose",
         { wasteName: wasteDetails.name },
         {
           headers: { Authorization: `Bearer ${token}` },

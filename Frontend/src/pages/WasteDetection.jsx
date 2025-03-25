@@ -12,7 +12,7 @@ const WasteDetection = () => {
     const fetchWasteData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/waste-items"
+          "https://waste-ui.onrender.com/api/waste-items"
         );
         setWasteItems(response.data);
       } catch (error) {
