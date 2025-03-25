@@ -1,0 +1,436 @@
+[
+  {
+    "category": "Recyclable",
+    "name": "Aluminium foil",
+    "info": "Thin, flexible sheet of aluminum often used for wrapping food.",
+    "disposal": "Rinse and recycle if clean; otherwise, dispose of in general waste.",
+    "facts": "Aluminium can be recycled indefinitely without losing quality.",
+    "points": 4
+  },
+  {
+    "category": "Recyclable",
+    "name": "Bottle cap",
+    "info": "Plastic or metal caps used to seal bottles.",
+    "disposal": "Check with local recycling programs; some require caps removed.",
+    "facts": "Small bottle caps often escape sorting machines, causing pollution.",
+    "points": 3
+  },
+  {
+    "category": "Recyclable",
+    "name": "bottle",
+    "info": "Plastic or glass containers for beverages and other liquids.",
+    "disposal": "Rinse and recycle; glass and plastic should be separated.",
+    "facts": "A plastic bottle can take up to 450 years to decompose.",
+    "points": 5
+  },
+  {
+    "category": "Hazardous",
+    "name": "Broken glass",
+    "info": "Shattered glass pieces from bottles or windows.",
+    "disposal": "Wrap in thick paper and dispose of in a separate bin to avoid injury.",
+    "facts": "Glass is 100% recyclable but dangerous if not handled properly.",
+    "points": 6
+  },
+  {
+    "category": "Recyclable",
+    "name": "Can",
+    "info": "Metal beverage or food container.",
+    "disposal": "Rinse and recycle; aluminum cans are widely accepted.",
+    "facts": "Recycling one aluminum can saves enough energy to run a TV for 3 hours.",
+    "points": 5
+  },
+  {
+    "category": "Recyclable",
+    "name": "Carton",
+    "info": "Paper-based liquid containers for milk, juice, etc.",
+    "disposal": "Rinse and check if your local recycling program accepts cartons.",
+    "facts": "Cartons are made of paper, plastic, and aluminum, requiring special recycling processes.",
+    "points": 4
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Cigarette",
+    "info": "Used cigarette butts with filters.",
+    "disposal": "Dispose of in general waste; never litter as they are non-biodegradable.",
+    "facts": "Cigarette filters contain plastic and take up to 10 years to decompose.",
+    "points": 2
+  },
+
+  {
+    "category": "Recyclable",
+    "name": "Lid",
+    "info": "Plastic or metal covering for cups or containers.",
+    "disposal": "Check local recycling; plastic lids often need to be separated.",
+    "facts": "Plastic lids are among the top ocean pollutants.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Other litter",
+    "info": "Uncategorized waste materials.",
+    "disposal": "Dispose of in general waste.",
+    "facts": "Miscellaneous litter contributes to land and marine pollution.",
+    "points": 1
+  },
+  {
+    "category": "Recyclable",
+    "name": "Other plastic",
+    "info": "Various plastic items not classified elsewhere.",
+    "disposal": "Check the plastic type and follow local recycling rules.",
+    "facts": "Over 300 million tons of plastic are produced each year, only a fraction gets recycled.",
+    "points": 3
+  },
+  {
+    "category": "Recyclable",
+    "name": "Paper",
+    "info": "Thin material made from wood pulp.",
+    "disposal": "Recycle clean paper; avoid recycling greasy or wet paper.",
+    "facts": "Recycling one ton of paper saves 17 trees and 7,000 gallons of water.",
+    "points": 4
+  },
+  {
+    "category": "Recyclable",
+    "name": "Plastic bag - wrapper",
+    "info": "Thin plastic packaging material.",
+    "disposal": "Not always recyclable curbside; check drop-off locations.",
+    "facts": "Plastic bags take 500+ years to degrade and cause severe ocean pollution.",
+    "points": 5
+  },
+  {
+    "category": "Recyclable",
+    "name": "Plastic container",
+    "info": "Rigid plastic packaging for food and products.",
+    "disposal": "Rinse and recycle; check for plastic resin codes.",
+    "facts": "Only about 9% of all plastic waste ever produced has been recycled.",
+    "points": 4
+  },
+  {
+    "category": "Recyclable",
+    "name": "Pop tab",
+    "info": "Aluminum pull tabs from cans.",
+    "disposal": "Recyclable along with aluminum cans.",
+    "facts": "Many organizations collect pop tabs for charity fundraising.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Straw",
+    "info": "Plastic tube used for drinking beverages.",
+    "disposal": "Dispose of in general waste; not commonly recyclable.",
+    "facts": "Plastic straws are one of the most common pollutants in oceans.",
+    "points": 2
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Styrofoam piece",
+    "info": "Small piece of polystyrene foam.",
+    "disposal": "Dispose of in general waste; very few recycling centers accept it.",
+    "facts": "Styrofoam takes hundreds of years to decompose and is harmful to wildlife.",
+    "points": 5
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Unlabeled litter",
+    "info": "Waste items with unknown material composition.",
+    "disposal": "Dispose of in general waste.",
+    "facts": "Unlabeled litter increases sorting challenges in waste management.",
+    "points": 1
+  },
+
+  {
+    "category": "Non-Recyclable",
+    "name": "Umbrella",
+    "info": "Collapsible canopy used for protection from rain or sun.",
+    "disposal": "Dispose of in general waste; difficult to recycle due to mixed materials.",
+    "facts": "Umbrellas often contain metal, fabric, and plastic, making them hard to recycle.",
+    "points": 2
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Handbag",
+    "info": "Bag used for carrying personal items, made from leather, fabric, or plastic.",
+    "disposal": "Donate if usable; otherwise, dispose of in general waste.",
+    "facts": "Many handbags contain synthetic materials that do not biodegrade easily.",
+    "points": 2
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Tie",
+    "info": "Cloth accessory worn around the neck.",
+    "disposal": "Donate if in good condition; otherwise, dispose of in general waste.",
+    "facts": "Ties are often made from synthetic fibers, making them non-biodegradable.",
+    "points": 1
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Suitcase",
+    "info": "Luggage used for carrying clothes and personal belongings.",
+    "disposal": "Donate if in good condition; otherwise, dispose of as bulk waste.",
+    "facts": "Most suitcases contain a mix of plastic, fabric, and metal, making recycling difficult.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Frisbee",
+    "info": "Plastic disc used for recreational throwing games.",
+    "disposal": "Dispose of in general waste unless made of recyclable plastic.",
+    "facts": "Most Frisbees are made of durable plastic, which takes hundreds of years to decompose.",
+    "points": 2
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Skis",
+    "info": "Long, flat devices used for skiing on snow.",
+    "disposal": "Donate if usable; otherwise, check for local bulk waste disposal programs.",
+    "facts": "Skis are often made of a combination of fiberglass, plastic, and metal, making them hard to recycle.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Snowboard",
+    "info": "Board used for snowboarding, typically made of wood, plastic, and metal.",
+    "disposal": "Donate if in good condition; otherwise, dispose of as bulk waste.",
+    "facts": "Snowboards contain composite materials that are not easily recyclable.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Sports Ball",
+    "info": "Ball used in various sports like football, basketball, and soccer.",
+    "disposal": "Dispose of in general waste; some rubber-based balls may be recyclable.",
+    "facts": "Sports balls often contain synthetic leather and rubber, making them difficult to recycle.",
+    "points": 2
+  },
+  {
+    "category": "Recyclable",
+    "name": "Kite",
+    "info": "Lightweight flying object made of paper, fabric, or plastic.",
+    "disposal": "Recycle if made of paper; plastic kites should be disposed of in general waste.",
+    "facts": "Traditional paper kites are biodegradable, unlike plastic-based kites.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Baseball Bat",
+    "info": "Wooden or metal bat used in baseball.",
+    "disposal": "Recycle metal bats at scrap metal facilities; wooden bats should go in general waste or be repurposed.",
+    "facts": "Wooden baseball bats can sometimes be composted if untreated.",
+    "points": 4
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Baseball Glove",
+    "info": "Leather glove used for catching baseballs.",
+    "disposal": "Donate if in good condition; otherwise, dispose of in general waste.",
+    "facts": "Most baseball gloves are made of treated leather, making them difficult to recycle.",
+    "points": 2
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Skateboard",
+    "info": "Board with wheels used for skating.",
+    "disposal": "Donate if usable; otherwise, dispose of in bulk waste collection.",
+    "facts": "Skateboards are made of multiple materials like wood, metal, and plastic, making recycling complex.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Surfboard",
+    "info": "Board used for surfing, usually made of foam, fiberglass, and resin.",
+    "disposal": "Check for recycling programs; otherwise, dispose of in bulk waste.",
+    "facts": "Most surfboards are not recyclable due to their composite materials.",
+    "points": 3
+  },
+  {
+    "category": "Recyclable",
+    "name": "Tennis Racket",
+    "info": "Sports equipment with a handle and mesh used for playing tennis.",
+    "disposal": "Donate if usable; metal frames can be recycled.",
+    "facts": "Older wooden rackets are harder to recycle than modern metal or composite ones.",
+    "points": 4
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Chair",
+    "info": "Furniture piece used for seating.",
+    "disposal": "Donate if in good condition; otherwise, dispose of in bulk waste collection.",
+    "facts": "Chairs made of wood or plastic are difficult to recycle.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Couch",
+    "info": "Large furniture piece used for seating multiple people.",
+    "disposal": "Donate if in good condition; otherwise, dispose of in bulk waste.",
+    "facts": "Couches contain fabric, wood, and foam, making recycling difficult.",
+    "points": 3
+  },
+  {
+    "category": "Recyclable",
+    "name": "Book",
+    "info": "Collection of written or printed pages bound together.",
+    "disposal": "Recycle paper books if not laminated or soiled.",
+    "facts": "Recycling books helps save trees and reduces landfill waste.",
+    "points": 4
+  },
+  {
+    "category": "Recyclable",
+    "name": "Clock",
+    "info": "Device used to measure and display time.",
+    "disposal": "Dispose of electronic clocks as e-waste; mechanical clocks can be recycled based on materials.",
+    "facts": "Electronic clocks contain circuits and batteries that should be properly disposed of.",
+    "points": 4
+  },
+  {
+    "category": "Recyclable",
+    "name": "Vase",
+    "info": "Container used for holding flowers, often made of glass, ceramic, or plastic.",
+    "disposal": "Recycle if made of glass or plastic; ceramic vases may not be recyclable.",
+    "facts": "Glass vases can be melted and reused indefinitely.",
+    "points": 3
+  },
+  {
+    "category": "Recyclable",
+    "name": "Scissors",
+    "info": "Hand-operated cutting tool.",
+    "disposal": "Recycle as scrap metal if fully metal; plastic-handled ones should be disposed of in general waste.",
+    "facts": "Metal scissors can be melted down and reused.",
+    "points": 4
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Hair Dryer",
+    "info": "Electrical device used for drying hair.",
+    "disposal": "Dispose of as electronic waste; do not throw in general waste.",
+    "facts": "Hair dryers contain electronic components that need proper recycling.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Toothbrush",
+    "info": "Oral hygiene tool with a handle and bristles.",
+    "disposal": "Dispose of in general waste; some brands offer recycling programs.",
+    "facts": "Plastic toothbrushes take hundreds of years to decompose.",
+    "points": 2
+  },
+  {
+    "category": "Organic Waste",
+    "name": "Banana",
+    "info": "A tropical fruit with a soft, edible interior and a thick peel.",
+    "disposal": "Compost banana peels; avoid throwing them in regular waste.",
+    "facts": "Banana peels decompose within 2-5 weeks, enriching soil with potassium and phosphorus.",
+    "points": 5
+  },
+  {
+    "category": "Organic Waste",
+    "name": "Apple",
+    "info": "A nutritious fruit with a crisp texture and edible skin.",
+    "disposal": "Compost apple cores and peels for eco-friendly disposal.",
+    "facts": "Apple waste decomposes in about 2 months and provides nitrogen to compost.",
+    "points": 5
+  },
+  {
+    "category": "Organic Waste",
+    "name": "Orange",
+    "info": "A citrus fruit rich in vitamin C with a thick, inedible peel.",
+    "disposal": "Compost orange peels or dry them for natural air fresheners.",
+    "facts": "Citrus peels take longer to decompose due to natural oils but are great for composting in moderation.",
+    "points": 5
+  },
+  {
+    "category": "Organic Waste",
+    "name": "Sandwich",
+    "info": "A food item made of bread filled with various ingredients.",
+    "disposal": "Compost bread, vegetables, and organic fillings; dispose of plastic wraps separately.",
+    "facts": "Stale bread can be repurposed into croutons or composted to prevent food waste.",
+    "points": 5
+  },
+  {
+    "category": "Organic Waste",
+    "name": "Hot Dog",
+    "info": "A processed sausage in a bun, often with condiments.",
+    "disposal": "Compost leftover bread and organic toppings; avoid composting processed meat.",
+    "facts": "Bread decomposes quickly, but processed meat can attract pests if not disposed of properly.",
+    "points": 4
+  },
+  {
+    "category": "Organic Waste",
+    "name": "Pizza",
+    "info": "A baked dish with a dough base topped with cheese, tomato sauce, and other ingredients.",
+    "disposal": "Compost crust and vegetable toppings; cheese and meat should be disposed of in general waste.",
+    "facts": "Greasy pizza boxes are not recyclable but can be composted if they are free of excessive cheese or oil.",
+    "points": 4
+  },
+  {
+    "category": "Organic Waste",
+    "name": "Donut",
+    "info": "A fried or baked sweet dough treat often covered in icing or sugar.",
+    "disposal": "Compost plain donuts; icing and sprinkles should be disposed of separately.",
+    "facts": "Sugary foods like donuts break down quickly but may attract pests in compost bins.",
+    "points": 4
+  },
+  {
+    "category": "Organic Waste",
+    "name": "Cake",
+    "info": "A baked dessert made from flour, sugar, eggs, and butter.",
+    "disposal": "Compost cake without heavy icing; dispose of plastic decorations separately.",
+    "facts": "Cake decomposes fast, adding moisture to compost piles.",
+    "points": 4
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Bottle",
+    "info": "A container used for holding liquids, usually made of plastic or glass.",
+    "disposal": "Recycle glass and plastic bottles properly; avoid throwing them in organic waste.",
+    "facts": "Plastic bottles take over 450 years to decompose, while glass bottles can be recycled indefinitely.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Wine Glass",
+    "info": "A delicate glassware item used for serving wine.",
+    "disposal": "Do not recycle broken wine glasses; dispose of them in general waste.",
+    "facts": "Glassware has different melting points than bottles, making them non-recyclable in regular glass bins.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Cup",
+    "info": "A small container used for drinking beverages.",
+    "disposal": "Paper cups with plastic lining are not recyclable; compost plain paper cups if possible.",
+    "facts": "Most disposable cups contain plastic coatings, making them non-recyclable.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Fork",
+    "info": "A utensil with prongs used for eating solid foods.",
+    "disposal": "Metal forks can be recycled; plastic forks should go in general waste.",
+    "facts": "Plastic cutlery is among the top pollutants found in oceans.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Knife",
+    "info": "A sharp utensil used for cutting food.",
+    "disposal": "Recycle metal knives safely; wrap and dispose of broken knives in general waste.",
+    "facts": "Sharp objects should be handled carefully during disposal to prevent injury.",
+    "points": 3
+  },
+  {
+    "category": "Non-Recyclable",
+    "name": "Spoon",
+    "info": "A rounded utensil used for eating or stirring food.",
+    "disposal": "Recycle metal spoons; plastic spoons should be disposed of in general waste.",
+    "facts": "Plastic spoons are difficult to recycle and often end up in landfills or oceans.",
+    "points": 3
+  },
+  {
+    "category": "Recyclable",
+    "name": "Bowl",
+    "info": "A round dish used for holding food or liquids.",
+    "disposal": "Recycle glass and plastic bowls; ceramic bowls are non-recyclable.",
+    "facts": "Broken ceramic bowls should be disposed of carefully, as they cannot be recycled with regular glass.",
+    "points": 4
+  }
+]

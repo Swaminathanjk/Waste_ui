@@ -1,0 +1,132 @@
+// import { useEffect, useRef, useState } from "react";
+// import * as ort from "onnxruntime-web";
+
+// const Scan = () => {
+//   const videoRef = useRef(null);
+//   const canvasRef = useRef(null);
+//   const [session, setSession] = useState(null);
+//   const [detections, setDetections] = useState([]);
+
+//   useEffect(() => {
+//     const loadModel = async () => {
+//       try {
+//         const modelSession = await ort.InferenceSession.create(
+//           "/FasterRCNN-10.onnx"
+//         );
+//         setSession(modelSession);
+//         console.log("Faster R-CNN ONNX model loaded successfully.");
+//       } catch (error) {
+//         console.error("Error loading ONNX model:", error);
+//       }
+//     };
+
+//     loadModel();
+//     startCamera();
+//   }, []);
+
+//   const startCamera = async () => {
+//     try {
+//       const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+//       if (videoRef.current) {
+//         videoRef.current.srcObject = stream;
+//       }
+//     } catch (error) {
+//       console.error("Error accessing camera:", error);
+//     }
+//   };
+
+//   const detectObjects = async () => {
+//     if (!session || !videoRef.current || videoRef.current.readyState < 2) {
+//       return;
+//     }
+
+//     const video = videoRef.current;
+//     const canvas = canvasRef.current;
+//     const ctx = canvas.getContext("2d");
+
+//     canvas.width = video.videoWidth;
+//     canvas.height = video.videoHeight;
+
+//     // Draw video frame on canvas
+//     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+//     // Convert image to tensor
+//     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+//     const floatData = new Float32Array(imageData.data.length);
+
+//     for (let i = 0; i < imageData.data.length; i++) {
+//       floatData[i] = imageData.data[i] / 255.0; // Normalize to [0,1]
+//     }
+
+//     const imageTensor = new ort.Tensor("float32", floatData, [
+//       1,
+//       3,
+//       canvas.height,
+//       canvas.width,
+//     ]);
+
+//     // Run inference
+//     try {
+//       const results = await session.run({ image: imageTensor });
+
+//       const boxes = results[session.outputNames[0]].data; // Adjust based on actual output
+//       const scores = results[session.outputNames[1]].data;
+//       const classes = results[session.outputNames[2]].data;
+
+//       ctx.clearRect(0, 0, canvas.width, canvas.height);
+//       ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+//       const detectionThreshold = 0.5;
+//       const detectedObjects = [];
+
+//       for (let i = 0; i < scores.length; i++) {
+//         if (scores[i] > detectionThreshold) {
+//           const [x1, y1, x2, y2] = boxes.slice(i * 4, i * 4 + 4);
+
+//           ctx.strokeStyle = "red";
+//           ctx.lineWidth = 2;
+//           ctx.strokeRect(x1, y1, x2 - x1, y2 - y1);
+
+//           ctx.fillStyle = "red";
+//           ctx.font = "16px Arial";
+//           ctx.fillText(
+//             `Class ${classes[i]} (${(scores[i] * 100).toFixed(1)}%)`,
+//             x1,
+//             y1 > 20 ? y1 - 5 : y1 + 15
+//           );
+
+//           detectedObjects.push({
+//             bbox: [x1, y1, x2, y2],
+//             class: classes[i],
+//             score: scores[i],
+//           });
+//         }
+//       }
+
+//       setDetections(detectedObjects);
+//     } catch (error) {
+//       console.error("Error running inference:", error);
+//     }
+//   };
+
+//   useEffect(() => {
+//     if (session) {
+//       const interval = setInterval(detectObjects, 500);
+//       return () => clearInterval(interval);
+//     }
+//   }, [session]);
+
+//   return (
+//     <div className="relative w-full h-screen flex justify-center items-center bg-black">
+//       <video
+//         ref={videoRef}
+//         autoPlay
+//         playsInline
+//         className="absolute w-full h-full object-cover"
+//       />
+//       <canvas ref={canvasRef} className="absolute w-full h-full" />
+//     </div>
+//   );
+// };
+
+// export default Scan;

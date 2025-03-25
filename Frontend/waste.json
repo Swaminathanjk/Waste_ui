@@ -1,0 +1,580 @@
+[
+    {
+      "category": "Hazardous Waste",
+      "name": "Aerosol Cans",
+      "info": "Containers holding pressurized gas and liquid.",
+      "disposal": "Fully empty the can. If completely empty, it can often be placed in regular trash, but check local regulations as some areas require special handling or have designated drop-off locations. Never puncture or incinerate.",
+      "facts": "The contents and pressure make them potentially explosive if heated or punctured.",
+      "points": 15
+    },
+    {
+      "category": "Hazardous Waste",
+      "name": "Batteries (Household)",
+      "info": "AA, AAA, C, D, 9V, etc. Powering everyday devices.",
+      "disposal": "Most household batteries can be taken to dedicated battery recycling bins often found at retailers, libraries, or municipal buildings. Some rechargeable batteries may have specific disposal instructions.",
+      "facts": "Contain heavy metals like mercury, cadmium, and lead, which can leach into the environment and cause harm.",
+      "points": 10
+    },
+    {
+      "category": "Hazardous Waste",
+      "name": "Cigarette",
+      "info": "Leftover after smoking, contain thousands of toxic chemicals.",
+      "disposal": "Dispose of in proper ashtrays. Never litter. Some cities have cigarette butt recycling programs to extract valuable materials and prevent environmental pollution.",
+      "facts": "A major source of litter worldwide, cigarette butts leach toxins into soil and water, harming wildlife and ecosystems.",
+      "points": 5
+    },
+    {
+      "category": "Hazardous Waste",
+      "name": "E-Waste (Electronics)",
+      "info": "Old phones, computers, etc. Contain valuable but hazardous materials.",
+      "disposal": "Take to dedicated e-waste recyclers. Many retailers and manufacturers have take-back programs. Check local regulations for options.",
+      "facts": "Improper disposal of e-waste releases toxins into the environment, but recycling recovers valuable resources and minimizes environmental impact.",
+      "points": 20
+    },
+    {
+      "category": "Hazardous Waste",
+      "name": "Paints (Oil-based)",
+      "info": "Leftover house paint, varnish, etc. Contain solvents harmful to breathe.",
+      "disposal": "Contact local hazardous waste facilities or look for designated collection events. Never pour down the drain.",
+      "facts": "Oil-based paints release volatile organic compounds (VOCs), which contribute to air pollution and can cause health problems.",
+      "points": 25
+    },
+    {
+      "category": "Hazardous Waste",
+      "name": "Pesticides",
+      "info": "Chemicals for controlling pests, highly toxic if mishandled.",
+      "disposal": "Follow product instructions carefully. Store and dispose of as directed on the label. Contact local hazardous waste facilities for safe disposal options.",
+      "facts": "Pesticides can contaminate soil and water, posing risks to human health, animals, and the environment. Always use and dispose of responsibly.",
+      "points": 30
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Broken Glass",
+      "info": "Shards of glass from broken items.",
+      "disposal": "Wrap carefully in newspaper or cardboard and label as 'broken glass' for regular trash. If possible, check if your local recycling program accepts glass.",
+      "facts": "Sharp edges pose a hazard, so careful handling is crucial. Glass itself is recyclable but often breaks down into too small pieces in regular recycling streams.",
+      "points": 5
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Ceramic Products (Broken)",
+      "info": "Broken plates, cups, or other ceramic items.",
+      "disposal": "Wrap carefully in a sturdy material like newspaper or cloth and dispose of in the regular trash.",
+      "facts": "Ceramics are typically not accepted in curbside recycling due to their high melting point and potential to contaminate glass recycling.",
+      "points": 5
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Crisp Packet",
+      "info": "Multi-layered packaging often containing plastic and metalized film.",
+      "disposal": "Generally not recyclable. Check for specialized recycling programs or dispose of in regular trash.",
+      "facts": "The mixed materials make them difficult to recycle. Some companies offer mail-in recycling for these types of packaging.",
+      "points": 8
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Diapers (Disposable)",
+      "info": "Used diapers, both baby and adult.",
+      "disposal": "Wrap securely and dispose of in the regular trash. Special diaper disposal systems are available for odor control.",
+      "facts": "Diapers are not recyclable or compostable due to hygiene and material composition.",
+      "points": 5
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Disposable Food Containers (Styrofoam, etc.)",
+      "info": "Take-out containers, trays, and other food packaging made from non-recyclable materials.",
+      "disposal": "Dispose of in regular trash. Opt for reusable containers when possible to reduce waste.",
+      "facts": "Styrofoam, in particular, is difficult to recycle and can take hundreds of years to decompose in landfills.",
+      "points": 5
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Disposable Plastic Cups",
+      "info": "Single-use cups often used for cold beverages.",
+      "disposal": "Usually not recyclable. Dispose of in regular trash. Choose reusable cups whenever possible.",
+      "facts": "These cups are often made from a type of plastic (polystyrene) that is not widely recycled.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Foam Cups and Containers",
+      "info": "Lightweight, insulated containers often used for hot beverages or takeout food.",
+      "disposal": "Not typically recyclable. Dispose of in regular trash. Consider reusable alternatives.",
+      "facts": "Foam products are bulky and difficult to recycle. They can break down into small pieces, contributing to microplastic pollution.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Garbage Bags",
+      "info": "Plastic bags used for containing trash.",
+      "disposal": "Tie securely and dispose of in regular trash. Consider biodegradable or compostable bags where accepted.",
+      "facts": "Made from various plastics, garbage bags are usually not recyclable and can take hundreds of years to decompose.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Other Plastic (Mixed or Unidentifiable)",
+      "info": "Plastic items without a clear recycling symbol or made from mixed materials.",
+      "disposal": "When in doubt, throw it out. Dispose of in regular trash. Try to reduce consumption of single-use plastics.",
+      "facts": "Plastics that are not clearly labeled or are made from a mix of materials are challenging to recycle.",
+      "points": 5
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Other Plastic Wrappers",
+      "info": "Plastic packaging from various products, often multi-layered.",
+      "disposal": "Usually not recyclable. Dispose of in regular trash. Look for products with minimal packaging.",
+      "facts": "The combination of materials and potential food contamination make most plastic wrappers difficult to recycle.",
+      "points": 5
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Plastic Film (Cling Wrap, etc.)",
+      "info": "Thin, flexible plastic used for wrapping and food storage.",
+      "disposal": "Not typically recyclable. Dispose of in regular trash. Consider reusable alternatives like beeswax wraps.",
+      "facts": "Plastic film is often too thin and flexible for traditional recycling equipment.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Plastic Straws",
+      "info": "Single-use drinking straws made from plastic.",
+      "disposal": "Not typically recyclable. Dispose of in regular trash. Opt for reusable straw alternatives (metal, bamboo, etc.).",
+      "facts": "Plastic straws contribute to plastic pollution, particularly in marine environments. Many businesses are phasing them out.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Plastic Utensils (Single-Use)",
+      "info": "Forks, spoons, and knives made from plastic for single use.",
+      "disposal": "Not typically recyclable. Dispose of in regular trash. Choose reusable utensils whenever possible.",
+      "facts": "The convenience of single-use plastic utensils comes at an environmental cost, as they contribute to plastic waste.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Plastic Bags (Grocery, Shopping)",
+      "info": "Thin, flexible bags often used for carrying groceries or shopping.",
+      "disposal": "Many grocery stores have bag recycling bins specifically for plastic bags. If not recyclable, dispose of in regular trash.",
+      "facts": "Plastic bags can take hundreds of years to decompose and pose a danger to wildlife. Opt for reusable bags whenever possible.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Polypropylene Bags (Woven)",
+      "info": "Sturdy, woven bags often used for shopping or storage.",
+      "disposal": "Check for recycling symbols, but often not accepted in curbside recycling. May be reusable for other purposes.",
+      "facts": "While durable, woven polypropylene bags are not always recyclable. Choosing reusable bags made from natural fibers can be a more sustainable option.",
+      "points": 5
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Rope & Strings",
+      "info": "Lengths of rope or string made from various materials.",
+      "disposal": "Dispose of in regular trash unless made from natural fibers like cotton, which can sometimes be composted.",
+      "facts": "The type of material determines the best disposal method. Natural fibers can biodegrade, while synthetic ropes may not.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Sanitary Napkins",
+      "info": "Feminine hygiene products used during menstruation.",
+      "disposal": "Wrap securely and dispose of in the regular trash. Never flush down the toilet.",
+      "facts": "Sanitary products are designed for hygiene but are not meant to be flushed, as they can clog pipes and sewage systems.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Shoes (Worn Out)",
+      "info": "Old shoes that are no longer wearable.",
+      "disposal": "Check for shoe recycling programs that donate usable shoes or repurpose materials. Otherwise, dispose of in regular trash.",
+      "facts": "Shoes are made from a variety of materials, making them challenging to recycle. Some organizations repurpose old shoes.",
+      "points": 8
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Single-Use Carrier Bags",
+      "info": "Small, thin bags often used for carrying takeout food or small purchases.",
+      "disposal": "Usually not recyclable. Dispose of in regular trash. Carry reusable bags for small purchases.",
+      "facts": "These bags contribute to plastic bag waste and often end up as litter. Choosing reusable alternatives helps reduce their impact.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Squeezable Tubes (Toothpaste, etc.)",
+      "info": "Tubes containing toothpaste, lotions, or other products.",
+      "disposal": "Most are not recyclable due to the mixed materials. Dispose of in regular trash. Look for alternative packaging options.",
+      "facts": "The combination of plastic and metal in these tubes makes them difficult to recycle effectively.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Styrofoam Products",
+      "info": "Packaging peanuts, packing materials, or other items made from Styrofoam.",
+      "disposal": "Check for specialized recycling programs or dispose of in regular trash. Minimize use whenever possible.",
+      "facts": "Styrofoam is a type of plastic (polystyrene) that is not easily recyclable and can take a very long time to decompose.",
+      "points": 5
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Styrofoam Pieces (Loose)",
+      "info": "Small, broken-down pieces of Styrofoam, often from packaging.",
+      "disposal": "Difficult to recycle. Contain in a bag and dispose of in regular trash.",
+      "facts": "Loose Styrofoam pieces can easily escape into the environment, contributing to litter and microplastic pollution.",
+      "points": 3
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Tissues (Used)",
+      "info": "Soft paper products used for blowing noses or wiping surfaces.",
+      "disposal": "Dispose of in regular trash. Choose reusable cloths for cleaning when possible.",
+      "facts": "Tissues are usually treated with chemicals and are not suitable for recycling. They decompose relatively quickly in landfills.",
+      "points": 2
+    },
+    {
+      "category": "Non-Recyclable Waste",
+      "name": "Unlabeled Litter",
+      "info": "Trash found on the ground with no clear identification.",
+      "disposal": "If safe to handle, dispose of in the appropriate bin based on the material. Wear gloves if necessary.",
+      "facts": "Litter pollutes our environment and can harm wildlife. Picking up litter, even if it's not yours, helps keep our communities clean.",
+      "points": 5
+    },
+
+    {
+      "category": "Organic Waste",
+      "name": "Coffee or Tea Bags",
+      "info": "Used tea bags, often containing paper, plant matter, and sometimes plastic.",
+      "disposal": "Remove any staples or tags. If entirely paper or biodegradable, compost. If unsure, dispose of in regular trash.",
+      "facts": "Some tea bags contain plastic, making them unsuitable for composting. Check the packaging or tea bag itself.",
+      "points": 2
+    },
+    {
+      "category": "Organic Waste",
+      "name": "Egg Shells",
+      "info": "Shells from cracked eggs.",
+      "disposal": "Rinse and crush before adding to the compost bin. Can also be scattered in gardens.",
+      "facts": "Egg shells add valuable calcium to compost and can help deter garden pests.",
+      "points": 2
+    },
+    {
+      "category": "Organic Waste",
+      "name": "Food Waste",
+      "info": "Uneaten food, leftovers, spoiled produce, etc.",
+      "disposal": "Compost if possible. Check local regulations for food waste collection programs. Otherwise, dispose of in regular trash.",
+      "facts": "Food waste in landfills produces methane, a potent greenhouse gas. Composting helps reduce these emissions.",
+      "points": 2
+    },
+    {
+      "category": "Organic Waste",
+      "name": "Food Scraps",
+      "info": "Vegetable peels, fruit cores, bones, etc.",
+      "disposal": "Ideal for composting. Check with your local municipality for guidelines and collection programs.",
+      "facts": "Composting food scraps reduces landfill waste and creates nutrient-rich soil amendments.",
+      "points": 2
+    },
+    {
+      "category": "Organic Waste",
+      "name": "Kitchen Waste (Plant-Based)",
+      "info": "Vegetable scraps, fruit peels, coffee grounds, etc.",
+      "disposal": "Collect in a designated compost bin or container. Consider a worm composting system for indoor options.",
+      "facts": "Composting kitchen waste diverts organic material from landfills and provides valuable nutrients for gardens.",
+      "points": 2
+    },
+    {
+      "category": "Organic Waste",
+      "name": "Yard Trimmings",
+      "info": "Grass clippings, leaves, small branches, etc.",
+      "disposal": "Compost, use for mulch, or check local regulations for yard waste collection.",
+      "facts": "Yard trimmings decompose into valuable organic matter, enriching the soil and reducing the need for chemical fertilizers.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Aluminium Foil",
+      "info": "Sheets of aluminum used for wrapping food or in cooking.",
+      "disposal": "Rinse off food residue. Crumple into a ball (larger than a golf ball) and place in the recycling bin.",
+      "facts": "Aluminum is highly recyclable and can be recycled endlessly without losing quality.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Aluminium Cans",
+      "info": "Beverage containers made from aluminum.",
+      "disposal": "Empty and rinse. Can often be crushed for space-saving. Place in the recycling bin.",
+      "facts": "Recycling aluminum saves significant energy compared to producing new aluminum from raw materials.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Cans (Steel/Tin)",
+      "info": "Food cans and some beverage containers made from steel or tin-plated steel.",
+      "disposal": "Empty and rinse. Crush if possible for easier storage. Place in the recycling bin.",
+      "facts": "Steel is a magnetic metal, while tin is not. Both are widely recyclable.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Clear Plastic Bottles",
+      "info": "Bottles made from clear PET plastic, often used for water or other beverages.",
+      "disposal": "Empty and rinse. Discard the cap separately (may be recyclable). Place the bottle in the recycling bin.",
+      "facts": "PET plastic is widely recycled and can be made into new bottles, fleece fabric, and other products.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Corrugated Cardboard",
+      "info": "Sturdy cardboard boxes with a wavy layer in the middle.",
+      "disposal": "Flatten boxes for easier storage. Remove any plastic packing materials. Place in the recycling bin.",
+      "facts": "Cardboard is highly recyclable and can be recycled multiple times.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Drink Cans (Aluminum)",
+      "info": "Cans commonly used for soft drinks or beer.",
+      "disposal": "Empty and rinse. Crush if desired. Place in the recycling bin.",
+      "facts": "Recycling aluminum cans saves a significant amount of energy compared to producing new aluminum.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Drink Cartons",
+      "info": "Containers for milk, juice, or other beverages often made from paperboard with a plastic coating.",
+      "disposal": "Empty and rinse if possible. Flatten for easier storage. Check if accepted in your local recycling program.",
+      "facts": "Drink cartons can be recycled, but the process is more complex due to the mixed materials.",
+      "points": 3
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Egg Cartons (Cardboard)",
+      "info": "Cartons used for holding eggs, typically made from cardboard.",
+      "disposal": "Can be placed in the recycling bin or reused for storage or crafts.",
+      "facts": "Cardboard egg cartons are biodegradable and can be a good source of carbon for compost piles.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Food Cans (Steel/Tin)",
+      "info": "Cans used for various food products, typically made from steel with a tin lining.",
+      "disposal": "Empty and rinse. Remove any paper labels if possible. Place in the recycling bin.",
+      "facts": "Steel food cans are highly recyclable and can be recycled repeatedly without loss of quality.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Glass Bottles (Clear, Green, Brown)",
+      "info": "Bottles made from glass, often used for beverages, sauces, or condiments.",
+      "disposal": "Empty and rinse. Separate by color if required by your local recycling program. Place in the recycling bin.",
+      "facts": "Glass is 100% recyclable and can be recycled endlessly without loss of quality.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Glass Cups",
+      "info": "Drinking glasses made from glass.",
+      "disposal": "Empty and rinse. Place in the recycling bin if accepted by your local program. Some programs may not accept broken glass.",
+      "facts": "Glass is highly recyclable, but broken glass can pose a hazard and may not be accepted in all recycling programs.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Glass Jars",
+      "info": "Jars made from glass, often used for food storage or other purposes.",
+      "disposal": "Empty, rinse, and remove any lids. Separate by color if required by your local recycling program. Place in the recycling bin.",
+      "facts": "Glass jars are highly versatile and can be reused for various purposes after being properly cleaned.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Glass Containers",
+      "info": "Various containers made from glass, used for food or other products.",
+      "disposal": "Empty, rinse, and separate by color if needed. Place in the recycling bin.",
+      "facts": "Glass is chemically inert, making it a safe and sustainable material for food and beverage storage.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Magazine Paper",
+      "info": "Glossy paper used for magazines, catalogs, or brochures.",
+      "disposal": "Remove any plastic inserts or non-paper components. Place in the recycling bin.",
+      "facts": "Magazine paper can be recycled, but the fibers are shorter than those in other paper products, limiting the number of times it can be recycled.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Meal Cartons (Cardboard)",
+      "info": "Takeout containers made from cardboard.",
+      "disposal": "Remove any leftover food and plastic windows. Flatten for easier storage. Place in the recycling bin.",
+      "facts": "Cardboard meal cartons are biodegradable and recyclable, making them a more sustainable option than Styrofoam.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Metal Bottle Caps",
+      "info": "Caps from glass bottles, often made from metal.",
+      "disposal": "Collect a small number of caps in a metal can, then crimp the top to contain them. Place the sealed can in the recycling bin.",
+      "facts": "Metal bottle caps are recyclable but can fall through sorting equipment at recycling facilities if not contained.",
+      "points": 3
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Metal Lids (Jars, Cans)",
+      "info": "Metal lids from jars or cans.",
+      "disposal": "If possible, place the lid back on the empty container before recycling. This prevents the lid from getting lost during the sorting process.",
+      "facts": "Metal lids are recyclable, but their small size can make them difficult to sort at recycling facilities.",
+      "points": 3
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Normal Paper",
+      "info": "Printer paper, writing paper, envelopes, etc.",
+      "disposal": "Remove any plastic windows from envelopes. Place loose paper in the recycling bin.",
+      "facts": "Paper can be recycled multiple times, but the fibers shorten with each cycle, eventually limiting its reusability.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Other Cartons (Milk, Juice)",
+      "info": "Paperboard cartons coated with plastic, often used for milk, juice, or other beverages.",
+      "disposal": "Empty, rinse, and flatten if possible. Check local regulations for recyclability.",
+      "facts": "These cartons are made from multiple materials, making them more challenging to recycle but often still possible.",
+      "points": 3
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Other Plastic Bottles (Milk Jugs, etc.)",
+      "info": "Bottles made from HDPE (high-density polyethylene), often used for milk, juice, or laundry detergent.",
+      "disposal": "Empty, rinse, and reattach the cap if possible. Place in the recycling bin.",
+      "facts": "HDPE is a versatile plastic often recycled into items like outdoor furniture, playground equipment, and more.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Other Plastic Containers",
+      "info": "Containers made from various plastics, such as yogurt tubs, margarine tubs, etc.",
+      "disposal": "Empty, rinse, and check the recycling symbol on the bottom. If accepted locally, place in the recycling bin.",
+      "facts": "Recycling plastic containers helps reduce the demand for virgin plastic production.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Paper Bags",
+      "info": "Bags made from paper, often used for groceries or shopping.",
+      "disposal": "Can be reused or placed in the recycling bin. Avoid getting paper bags wet, as it reduces their quality for recycling.",
+      "facts": "Paper bags are biodegradable and compostable, making them a more sustainable option than plastic bags.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Paper Cups",
+      "info": "Cups made from paper, often used for hot beverages.",
+      "disposal": "Check if accepted in your local recycling program. Some cups may have a plastic lining that needs to be removed.",
+      "facts": "Paper cups are often lined with plastic to prevent leaks, making them more challenging to recycle. Look for unlined options when possible.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Paper Products (Clean)",
+      "info": "Paper towels, napkins, or other paper products that have not come into contact with food or cleaning products.",
+      "disposal": "Can be placed in the recycling bin. Avoid getting paper products wet, as it can make them difficult to recycle.",
+      "facts": "Recycling paper conserves natural resources and reduces the amount of waste sent to landfills.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Pizza Boxes (Clean)",
+      "info": "Cardboard boxes used for pizza delivery.",
+      "disposal": "Remove any leftover food or greasy liner paper. If the box is free from heavy grease stains, it can often be placed in the recycling bin. Check local guidelines.",
+      "facts": "Grease and food residue can contaminate the recycling process, so it's essential to remove them before recycling pizza boxes.",
+      "points": 3
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Plastic Bottle Caps",
+      "info": "Caps from plastic bottles, often made from a different type of plastic than the bottle.",
+      "disposal": "Check local guidelines. Some areas require caps to be separated from bottles, while others allow them to be recycled together (reattached).",
+      "facts": "Plastic bottle caps are small but can be recycled into new products if handled correctly.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Plastic Lids (Yogurt Containers, etc.)",
+      "info": "Lids from various plastic containers.",
+      "disposal": "If possible, place the lid back on the empty container before recycling. This helps prevent lids from getting lost during the sorting process.",
+      "facts": "Plastic lids are recyclable but often made from a different type of plastic than the container they come with.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Plastic Bottles (Various)",
+      "info": "Bottles made from various types of recyclable plastics.",
+      "disposal": "Empty, rinse, and check the number on the bottom for local recycling guidelines. Flatten if possible.",
+      "facts": "Different types of plastics have different recycling processes, so sorting is crucial.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Pop Tabs (Aluminum Cans)",
+      "info": "Small aluminum tabs pulled to open beverage cans.",
+      "disposal": "Collect in a separate container and donate to charities that collect them for recycling and fundraising. Alternatively, place them inside an empty aluminum can before recycling.",
+      "facts": "Pop tabs are made from high-grade aluminum and can be recycled indefinitely.",
+      "points": 3
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Scrap Metal (Clean)",
+      "info": "Metal items that are no longer usable.",
+      "disposal": "Check local scrap metal recycling centers or collection events.",
+      "facts": "Metal is highly recyclable and can be melted down and repurposed into new products.",
+      "points": 10
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Six-Pack Rings (Plastic)",
+      "info": "Plastic rings used to hold together six-packs of beverages.",
+      "disposal": "Cut all the rings apart to prevent wildlife entanglement. Place in the recycling bin if accepted locally. Some stores may collect them separately.",
+      "facts": "Plastic six-pack rings pose a serious threat to marine life. Cutting them apart before disposal helps reduce this risk.",
+      "points": 5
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Spread Tubs (Margarine, etc.)",
+      "info": "Small tubs often used for margarine, spreads, or dips.",
+      "disposal": "Empty, rinse, and check for a recycling symbol. If accepted locally, place in the recycling bin.",
+      "facts": "Plastic tubs are often recyclable, but it's essential to check local guidelines, as regulations vary.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Toilet Paper Tubes (Cardboard)",
+      "info": "Cardboard tubes from toilet paper rolls.",
+      "disposal": "Place in the recycling bin or reuse for crafts or storage.",
+      "facts": "Cardboard toilet paper tubes are biodegradable and recyclable, providing valuable fiber for new paper products.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Tupperware (Reusable)",
+      "info": "Durable plastic containers designed for food storage and reuse.",
+      "disposal": "Wash and reuse as intended. If no longer usable, check for recycling options or dispose of in the trash.",
+      "facts": "Tupperware is intended to be reusable, reducing the need for single-use plastic wrap or bags.",
+      "points": 2
+    },
+    {
+      "category": "Recyclable Waste",
+      "name": "Wrapping Paper (Non-Foil)",
+      "info": "Paper used for wrapping gifts, often made from thin, decorative paper.",
+      "disposal": "If the paper is free of glitter, foil, or plastic coatings, it can often be recycled. Check local guidelines.",
+      "facts": "Wrapping paper adds a festive touch but can also generate waste. Opt for reusable gift bags or recyclable paper options.",
+      "points": 2
+    },
+    {
+      "category": "Hazardous Waste",
+      "name": "Aluminium Blister Pack",
+      "info": "Packaging material often used for pills, small electronics, etc.",
+      "disposal": "Check if your local pharmacy has a take-back program. Otherwise, it's generally considered non-recyclable and goes in the regular trash.",
+      "facts": "Blister packs are a combination of materials, making them difficult to recycle. Reducing their use by choosing alternative packaging helps.",
+      "points": 8
+    }
+  ]
+  
