@@ -10,7 +10,7 @@ const Scan = () => {
   const [model, setModel] = useState(null);
   const [detections, setDetections] = useState([]);
   const [selectedWasteItem, setSelectedWasteItem] = useState(null);
-  const [wasteCategories, setWasteCategories] = useState({}); // Store waste categories
+  const [wasteCategories, setWasteCategories] = useState({});
 
   useEffect(() => {
     const loadModel = async () => {
@@ -25,7 +25,7 @@ const Scan = () => {
     };
 
     loadModel();
-    fetchWasteCategories(); // Fetch categories on mount
+    fetchWasteCategories();
     startCamera();
   }, []);
 
@@ -46,11 +46,11 @@ const Scan = () => {
         "https://waste-ui.onrender.com/api/waste/waste-items"
       );
 
-      console.log("API Response:", response.data); // Debugging line
+      console.log("API Response:", response.data);
 
       const wasteItems = Array.isArray(response.data)
         ? response.data
-        : response.data.items; // Handle object response
+        : response.data.items;
 
       if (!Array.isArray(wasteItems)) {
         throw new Error("Unexpected API response format");
@@ -85,7 +85,6 @@ const Scan = () => {
     predictions.forEach((prediction) => {
       const [x, y, width, height] = prediction.bbox;
 
-      // Draw bounding box
       ctx.fillStyle = "rgba(255, 0, 0, 0.2)";
       ctx.fillRect(x, y, width, height);
 
@@ -93,8 +92,8 @@ const Scan = () => {
       ctx.lineWidth = 2;
       ctx.strokeRect(x, y, width, height);
 
-      ctx.fillStyle = "red";
-      ctx.font = "16px Arial";
+      ctx.fillStyle = "white";
+      ctx.font = "14px Arial";
       ctx.fillText(
         `${prediction.class} (${(prediction.score * 100).toFixed(1)}%)`,
         x,
@@ -119,11 +118,17 @@ const Scan = () => {
           clickY >= y &&
           clickY <= y + height
         ) {
-          const detectedWasteName = prediction.class.toLowerCase().trim(); // Normalize detected name
-          setSelectedWasteItem({
-            name: prediction.class,
-            category: wasteCategories[detectedWasteName] || "Unknown",
-          });
+          const detectedWasteName = prediction.class.toLowerCase().trim();
+          const wasteCategory = wasteCategories[detectedWasteName] || "Unknown";
+
+          const wasteItem = {
+            name: prediction.class, // Ensure name is passed correctly
+            category: wasteCategory,
+          };
+
+          console.log("Selected Waste Item:", wasteItem); // Debugging
+
+          setSelectedWasteItem(wasteItem);
           break;
         }
       }
@@ -147,14 +152,18 @@ const Scan = () => {
   };
 
   return (
-    <div className="relative w-full h-screen flex justify-center items-center bg-black">
-      <video
-        ref={videoRef}
-        autoPlay
-        playsInline
-        className="absolute w-full h-full object-cover"
-      />
-      <canvas ref={canvasRef} className="absolute w-full h-full" />
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4">
+      <h1 className="text-xl font-bold mb-4 text-center">Scan Waste Item</h1>
+
+      <div className="relative w-full max-w-[400px] h-[300px] rounded-lg overflow-hidden border border-gray-700 shadow-lg">
+        <video
+          ref={videoRef}
+          autoPlay
+          playsInline
+          className="absolute w-full h-full object-cover rounded-lg"
+        />
+        <canvas ref={canvasRef} className="absolute w-full h-full rounded-lg" />
+      </div>
 
       {selectedWasteItem && (
         <WastePopup
@@ -163,6 +172,10 @@ const Scan = () => {
           onDispose={handleDispose}
         />
       )}
+
+      <p className="text-sm text-gray-400 mt-3">
+        Click on detected waste to view details.
+      </p>
     </div>
   );
 };

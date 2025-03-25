@@ -1,44 +1,26 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const WastePopup = ({ wasteItem, onClose }) => {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    document.body.style.overflow = "hidden"; // Prevent scrolling when open
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, []);
-
-  if (!wasteItem) return null;
+const WastePopup = ({ wasteItem, onClose, onDispose }) => {
+  if (!wasteItem) return null; // Prevent rendering without data
 
   return (
-    <div
-      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 backdrop-blur-md z-50"
-      onClick={onClose} // Close when clicking outside
-    >
-      <div
-        className="bg-white p-6 rounded-2xl shadow-xl w-96 relative"
-        onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
-      >
-        <h2 className="text-xl font-bold text-center">{wasteItem.name}</h2>
-        <p className="text-gray-600 text-center mb-4">
-          Category: {wasteItem.category}
-        </p>
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+      <div className="bg-white rounded-lg shadow-lg p-6 w-80">
+        <h2 className="text-lg font-bold text-gray-900">
+          {wasteItem.name || "Unknown Item"}
+        </h2>
+        <p className="text-sm text-gray-600">Category: {wasteItem.category}</p>
 
-        <div className="flex justify-between">
-          <button
-            onClick={onClose}
-            className="px-4 py-2 bg-gray-400 text-white rounded-lg hover:bg-gray-500 transition"
-          >
+        <div className="flex justify-between mt-4">
+          <button className="bg-gray-300 px-4 py-2 rounded" onClick={onClose}>
             Close
           </button>
           <button
-            onClick={() => navigate(`/waste-details/${wasteItem.name}`)}
-            className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+            className="bg-green-500 text-white px-4 py-2 rounded"
+            onClick={() => onDispose(wasteItem)}
           >
-            How to Dispose?
+            Dispose
           </button>
         </div>
       </div>
