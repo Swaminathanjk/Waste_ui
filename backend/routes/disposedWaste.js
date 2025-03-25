@@ -30,13 +30,19 @@ router.get("/user/:userId", authMiddleware, async (req, res) => {
 router.post("/dispose", authMiddleware, async (req, res) => {
   try {
     const { wasteName } = req.body;
-    const userId = req.user.userId; // ✅ Fix: Correct user ID reference
+    const userId = req.user.userId; 
 
     if (!wasteName) {
       return res.status(400).json({ message: "Waste name is required" });
     }
 
-    const wasteItem = await WasteInfo.findOne({ name: wasteName });
+    // ✅ Normalize the waste name (trim spaces & ignore case)
+    const normalizedWasteName = wasteName.trim().replace(/\s+/g, " ");
+    
+    const wasteItem = await WasteInfo.findOne({
+      name: { $regex: `^${normalizedWasteName.replace(/\s/g, "\\s")}$`, $options: "i" },
+    });
+
     if (!wasteItem) {
       return res.status(404).json({ message: "Waste item not found" });
     }
@@ -46,7 +52,6 @@ router.post("/dispose", authMiddleware, async (req, res) => {
       return res.status(404).json({ message: "User not found" });
     }
 
-    // ✅ Store disposal in global collection
     const disposedWaste = await DisposedWaste.create({
       userId,
       wasteName: wasteItem.name,
@@ -56,7 +61,6 @@ router.post("/dispose", authMiddleware, async (req, res) => {
       disposedAt: new Date(),
     });
 
-    // ✅ Update user's disposal history
     user.disposalHistory.push({
       wasteName: wasteItem.name,
       category: wasteItem.category,
@@ -71,11 +75,12 @@ router.post("/dispose", authMiddleware, async (req, res) => {
     res.json({
       message: "Disposal recorded successfully",
       points: wasteItem.points,
-      disposedWaste, // ✅ Return disposal record for confirmation
+      disposedWaste,
     });
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message });
   }
 });
+
 
 module.exports = router;

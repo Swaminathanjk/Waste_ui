@@ -17,14 +17,23 @@ router.post("/", authMiddleware, async (req, res) => {
       return res.status(400).json({ message: "Waste name is required" });
     }
 
-    const wasteItem = await WasteInfo.findOne({ name: wasteName });
+    // ✅ Normalize the waste name (trim spaces & ignore case)
+    const normalizedWasteName = wasteName.trim().replace(/\s+/g, " ");
+
+    const wasteItem = await WasteInfo.findOne({
+      name: {
+        $regex: `^${normalizedWasteName.replace(/\s/g, "\\s")}$`,
+        $options: "i",
+      },
+    });
+
     if (!wasteItem) {
       return res.status(404).json({ message: "Waste item not found" });
     }
 
     const disposedWaste = new DisposedWaste({
       userId,
-      wasteName,
+      wasteName: wasteItem.name,
       category: wasteItem.category,
       disposalMethod: wasteItem.disposal,
       pointsEarned: wasteItem.points,
