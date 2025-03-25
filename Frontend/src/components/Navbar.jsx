@@ -26,7 +26,7 @@ const Navbar = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
     setUser(null);
-    navigate("/auth");
+    navigate("/");
     window.location.reload(); // Ensure navbar updates immediately
   };
 
