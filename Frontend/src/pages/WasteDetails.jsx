@@ -50,7 +50,7 @@ const WasteDetails = () => {
       console.log("Disposal Response:", response.data);
       alert(`Successfully disposed of ${wasteDetails.name}!`);
 
-      navigate("/home"); // Redirect after disposal
+      navigate("/"); // Redirect after disposal
     } catch (error) {
       console.error("Disposal Error:", error.response?.data || error.message);
       alert("Failed to dispose of waste. Please try again.");

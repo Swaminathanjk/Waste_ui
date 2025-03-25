@@ -49,7 +49,12 @@ router.get("/:userId/disposal-history", authMiddleware, async (req, res) => {
     );
     if (!user) return res.status(404).json({ message: "User not found" });
 
-    res.json({ points: user.points, disposalHistory: user.disposalHistory });
+    // ✅ Ensure disposalHistory is sorted (latest first)
+    const sortedHistory = user.disposalHistory.sort(
+      (a, b) => new Date(b.disposedAt) - new Date(a.disposedAt)
+    );
+
+    res.json({ points: user.points, disposalHistory: sortedHistory });
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message });
   }

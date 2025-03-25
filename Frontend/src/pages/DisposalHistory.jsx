@@ -40,7 +40,12 @@ const DisposalHistory = () => {
           disposalData?.disposalHistory &&
           Array.isArray(disposalData.disposalHistory)
         ) {
-          setHistory(disposalData.disposalHistory);
+          // ✅ Sort history by latest first (newest `disposedAt` first)
+          const sortedHistory = disposalData.disposalHistory.sort(
+            (a, b) => new Date(b.disposedAt) - new Date(a.disposedAt)
+          );
+
+          setHistory(sortedHistory);
           setTotalPoints(disposalData.points || 0);
         } else {
           setHistory([]);
