@@ -3,13 +3,14 @@ const WasteInfo = require("../models/WasteInfo"); // Waste data model
 const router = express.Router();
 
 // Get all waste items
-router.get("/api/waste/waste-items", async (req, res) => {
+router.get("/waste-items", async (req, res) => {
   try {
-    const wasteItems = await WasteInfo.find({}).lean(); // Use lean() for faster response
+    const wasteItems = await WasteInfo.find();
     res.json(wasteItems);
   } catch (error) {
-    console.error("Error fetching waste items:", error);
-    res.status(500).json({ error: "Internal server error" });
+    res
+      .status(500)
+      .json({ message: "Error fetching waste data", error: error.message });
   }
 });
 
