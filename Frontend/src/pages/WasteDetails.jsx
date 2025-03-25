@@ -8,6 +8,7 @@ const WasteDetails = () => {
   const [wasteDetails, setWasteDetails] = useState(null);
   const [loading, setLoading] = useState(true);
 
+
   useEffect(() => {
     const fetchWasteDetails = async () => {
       try {
@@ -67,6 +68,7 @@ const WasteDetails = () => {
       <p className="mt-2 text-gray-300">
         Disposal Method: {wasteDetails.disposal}
       </p>
+      <p className="mt-2 text-gray-300">Facts: {wasteDetails.facts}</p>
 
       <button
         onClick={handleDispose}
