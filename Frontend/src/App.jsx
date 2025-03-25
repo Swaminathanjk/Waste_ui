@@ -7,6 +7,7 @@ import WasteDetails from "./pages/WasteDetails";
 import Leaderboard from "./pages/Leaderboard";
 import Profile from "./pages/Profile";
 import Scan from "./pages/Scan";
+import DisposalHistory from "./pages/DisposalHistory";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/profile" element={<Profile />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/scan" element={<Scan />} />
+            <Route path="/history" element={<DisposalHistory />} />
           </Routes>
         </div>
         <Footer />

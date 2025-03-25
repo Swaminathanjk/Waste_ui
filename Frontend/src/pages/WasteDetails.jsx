@@ -11,8 +11,9 @@ const WasteDetails = () => {
   useEffect(() => {
     const fetchWasteDetails = async () => {
       try {
+        const formattedWasteName = encodeURIComponent(wasteName.toLowerCase()); // Convert to lowercase and encode
         const response = await axios.get(
-          `https://waste-ui.onrender.com/api/wasteInfo/waste-items/${wasteName}`
+          `https://waste-ui.onrender.com/api/wasteInfo/waste-items/${formattedWasteName}`
         );
         setWasteDetails(response.data);
       } catch (error) {
@@ -40,7 +41,7 @@ const WasteDetails = () => {
 
       const response = await axios.post(
         "https://waste-ui.onrender.com/api/waste/dispose",
-        { wasteName: wasteDetails.name },
+        { wasteName: wasteDetails.name.toLowerCase() }, // Ensure case insensitivity
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -49,8 +50,7 @@ const WasteDetails = () => {
       console.log("Disposal Response:", response.data);
       alert(`Successfully disposed of ${wasteDetails.name}!`);
 
-      // Navigate back or show success UI
-      navigate("/home"); // Redirect to leaderboard or history
+      navigate("/home"); // Redirect after disposal
     } catch (error) {
       console.error("Disposal Error:", error.response?.data || error.message);
       alert("Failed to dispose of waste. Please try again.");
