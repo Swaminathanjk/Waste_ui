@@ -5,7 +5,7 @@ const router = express.Router();
 // Get all waste items
 router.get("/api/waste/waste-items", async (req, res) => {
   try {
-    const wasteItems = await WasteItem.find({}).lean(); // Use lean() for faster response
+    const wasteItems = await WasteInfo.find({}).lean(); // Use lean() for faster response
     res.json(wasteItems);
   } catch (error) {
     console.error("Error fetching waste items:", error);
