@@ -47,8 +47,8 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Link to="/login" className="hover:text-gray-300">Login</Link>
-              <Link to="/signup" className="hover:text-gray-300">Signup</Link>
+              <Link to="/auth" className="hover:text-gray-300">Login</Link>
+              <Link to="/auth" className="hover:text-gray-300">Signup</Link>
             </>
           )}
         </div>
