@@ -107,7 +107,7 @@ const Scan = () => {
       ctx.lineWidth = 2;
       ctx.strokeRect(x, y, width, height);
 
-      ctx.fillStyle = "white";
+      ctx.fillStyle = "red";
       ctx.font = "14px Arial";
       ctx.fillText(
         `${prediction.class} (${(prediction.score * 100).toFixed(1)}%)`,
